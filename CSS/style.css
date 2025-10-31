@@ -61,9 +61,18 @@ img {
     gap: 60px;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .header__link {
     font-weight: 700;
     font-size: 18px;
+}
+
+/* ---------------Бургер меню-------------- */
+.menu-icon {
+    display: none;
 }
 
 /* ---------------MAIN__1-------------- */
@@ -334,12 +343,15 @@ img {
         width: 350px;
         height: 350px;
     }
+
     .Explorations__link {
         height: 308px;
     }
+
     .projects {
         padding-top: 160px;
     }
+
     .projects__link {
         height: 460px;
     }
@@ -354,9 +366,11 @@ img {
     .header .contener {
         max-width: 650px;
     }
+
     .works {
-    padding-top: 80px;
-}
+        padding-top: 80px;
+    }
+
     .footer__img {
         margin: 0px 15px;
     }
@@ -420,7 +434,139 @@ img {
         max-width: 300px;
         font-size: 16px;
     }
+
     .projects {
-    padding-top: 60px;
+        padding-top: 60px;
+    }
 }
+
+@media (max-width: 425px) {
+    .header__nav {
+        display: none;
+    }
+
+    .contener {
+        margin: 0px auto;
+        max-width: 366px;
+    }
+
+    .welcome {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-top: 72px;
+    }
+
+    .welcome .contener {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .div-avatar {
+        order: -1;
+    }
+
+    .avatar {
+        height: 240px;
+        width: 240px;
+    }
+
+    .welcome__h1 {
+        max-width: 366px;
+    }
+
+    .welcome__p {
+        max-width: 366px;
+    }
+
+    .welcome__link {
+        margin-top: 48px;
+    }
+
+    .works__link {
+        margin-bottom: 0px;
+    }
+
+    .work:nth-child(odd) {
+        margin-top: 0px;
+    }
+
+    .works__examples {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-top: 39px;
+    }
+
+    .work {
+        height: 600px;
+    }
+
+    .Explorations {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .projects {
+        padding-top: 116px;
+    }
+
+    .Explorations__link {
+        height: 366px;
+    }
+
+    .projects .contener .main_4 {
+        padding-top: 200px;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .projects__link {
+        height: 600px;
+    }
+
+    .projects .contener .main_5 {
+        padding-top: 200px;
+    }
+
+    .products__p {
+        font-size: 28px;
+    }
+
+    .contact__p {
+        font-size: 18px;
+    }
+
+    .footer .contener {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .footer__social {
+        order: -1;
+    }
+
+    /* ---------------Бургер меню-------------- */
+    .menu-icon {
+        display: inline-block;
+        width: 40px;
+        height: 30px;
+        background-color: #323232b3;
+    }
+
+    .menu-icon__line {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #000000;
+    }
 }
