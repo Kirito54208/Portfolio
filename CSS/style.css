@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #202020;
@@ -313,7 +315,17 @@ img {
 }
 
 /* -----------Адаптив-------------*/
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
+    .contener {
+        margin: 0px auto;
+        max-width: 1050px;
+    }
+
+    .header .contener {
+        max-width: 1024px;
+    }
+}
+@media (max-width: 1060px) {
     .contener {
         margin: 0px auto;
         max-width: 800px;
@@ -340,8 +352,8 @@ img {
     }
 
     .avatar {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
 
     .Explorations__link {
@@ -354,6 +366,45 @@ img {
 
     .projects__link {
         height: 460px;
+    }
+}
+@media (max-width: 900px) {
+        .contener {
+        margin: 0px auto;
+        max-width: 600px;
+    }
+
+    .header .contener {
+        max-width: 600px;
+    }
+        .welcome__h1 {
+        width: 300px;
+        font-size: 30px;
+
+    }
+
+    .welcome__p {
+        width: 295px;
+        font-size: 15px;
+    }
+    .avatar {
+        width: 290px;
+        height: 290px;
+    }
+    .welcome__link {
+        font-size: 15px;
+        padding: 12px 30px;
+    }
+        .footer .contener {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .footer__social {
+        order: -1;
     }
 }
 @media (max-width: 800px) {
