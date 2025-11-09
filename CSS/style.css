@@ -27,7 +27,7 @@ img {
     max-width: 100%;
 }
 .scrol{
-    background-color: rgba(65, 65, 65, 0.411);
+    background-color: rgba(65, 65, 65, 0.616);
     transform: rotate(180deg);
     width: 70px;
     height: 70px;
@@ -38,6 +38,7 @@ img {
     position: fixed;
     bottom: 5%;
     right: 5%;
+    z-index: 1;
 }
 
 /* ---------------HEADER-------------- */
